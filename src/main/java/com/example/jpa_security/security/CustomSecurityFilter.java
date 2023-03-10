@@ -48,6 +48,7 @@ public class CustomSecurityFilter extends OncePerRequestFilter {
 
             SecurityContextHolder.setContext(context);
         }
+
         filterChain.doFilter(request,response);
     }
 }
